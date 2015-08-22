@@ -1,0 +1,47 @@
+{
+  "name": "emma",
+  "version": "0.1.0",
+  "description": "Emma is an app to communicate with the trevor knowledge navigator in a human-friendly way.",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "test": "mocha --compilers js:babel/register --recursive",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvader/emma.git"
+  },
+  "keywords": [
+    "app",
+    "trevor",
+    "knowledge",
+    "navigator"
+  ],
+  "author": "Miguel Molina <hi@mvader.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvader/emma/issues"
+  },
+  "homepage": "https://github.com/mvader/emma",
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "isomorphic-fetch": "^2.1.1",
+    "react": "^0.13.3",
+    "react-redux": "^0.9.0",
+    "redux": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2",
+    "expect": "^1.9.0",
+    "jsdom": "<4.0.0",
+    "mocha": "^2.2.5",
+    "mocha-jsdom": "^1.0.0",
+    "react-hot-loader": "^1.2.8",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
